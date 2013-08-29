@@ -6,8 +6,11 @@
     %title JS processing
     %meta(name="description" content="JS test")
     %meta(name="author" content="eco-systems.com.mx")
+    %script{:type => "text/javascript", :src => "processing-1.4.1.min.js"}
     //%link{:rel => 'stylesheet', :href => '/stylesheets/global.css', :type => 'text/css', :media => 'all'}
-    %link{:rel => "shortcut icon", :href => "images/favicon.ico", :type => "image/x-icon"}
   %body
-    Hola
+    %h1 Processing.js Test
+    %p This is my first Processing.js web-based sketch:
+    %p Does not show in Chrome
+    %canvas{ "data-processing-sources" => "hello_web.pde" }
     
